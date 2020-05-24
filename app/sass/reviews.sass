@@ -1,0 +1,87 @@
+.reviews-container
+	width: 100%
+	margin: 0 auto
+	padding-top: 210px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	padding: 100px 20px 100px 20px
+.reviews
+	width: 100%
+	order: 3
+
+
+
+
+
+.title
+	color: #000000
+	font-size: 54px
+	font-weight: 400
+	letter-spacing: 0.29px
+	margin-bottom: 45px
+	text-align: center
+.review-item-wrapper
+	display: flex
+	flex-direction: column
+.review-item
+	position: relative
+	margin-bottom: 25px
+	padding-bottom: 15px
+	border-bottom: 1px solid #e7e7e7
+	z-index: 1
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: -18px
+		width: 30px
+		height: 30px
+		background: url("../img/quote.png") center no-repeat
+		background-size: cover
+		z-index: -1
+
+.review-item__text
+	color: #999999
+	font-size: 14px
+	font-weight: 400
+	line-height: 1.9
+	font-style: italic
+	margin-bottom: 10px
+	
+
+
+.review-item__author
+	color: #000000
+	font-size: 16px
+	font-weight: 900
+	line-height: 1.9
+	&:before
+		content: "-"
+
+
+@media only screen and (min-width : 768px)
+	.review-item-wrapper
+		flex-direction: row
+@media only screen and (min-width : 992px)
+	.reviews-container
+		flex-direction: row
+		align-items: flex-start
+		padding: 210px 20px 0 20px
+	.title
+		text-align: start
+	.review-item-wrapper
+		flex-direction: column
+	.reviews
+		max-width: 210px
+		order: 1
+
+
+@media only screen and (min-width : 1460px)
+	.reviews-container
+		width: 1140px
+	.reviews
+		padding: 0
+		
+	

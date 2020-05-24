@@ -1,0 +1,76 @@
+.videos
+	width: 100%
+	order: 2
+.videos-items-wrapper
+	display: flex
+	flex-direction: column
+
+.title
+	color: #000000
+	font-size: 54px
+	font-weight: 400
+	letter-spacing: 0.29px
+	margin: 50px 0 50px 0
+	text-align: center
+
+.videos__item
+	margin-bottom: 37px
+	position: relative
+
+.play-icon
+	height: 56px
+	width: 56px
+	border-radius: 50%
+	position: relative
+	background: white
+	cursor: pointer
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		display: block
+		width: 0
+		height: 0
+		border-top: 5.5px solid transparent
+		border-left: 8px solid black
+		border-bottom: 5.5px solid transparent
+
+
+.videos__item .play-icon
+	position: absolute
+	left: 0
+	bottom: 0
+
+.video-centre
+	order: 1
+	position: relative
+.video-centre .play-icon
+	position: absolute
+	left: 0
+	bottom: 0
+
+@media only screen and (min-width : 620px)
+	.videos-items-wrapper
+		flex-direction: row
+		justify-content: center
+	.videos__item
+		padding-right: 60px
+		&:last-child
+			padding: 0
+
+
+@media only screen and (min-width : 992px)
+	.title
+		margin: 0 0 25px 0
+		text-align: start
+	.videos
+		max-width: 210px
+		order: 3
+	.video-centre
+		order: 2
+	.videos-items-wrapper
+		flex-direction: column
+	.videos__item
+		padding: 0

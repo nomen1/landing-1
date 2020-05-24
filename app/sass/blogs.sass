@@ -1,0 +1,60 @@
+
+.blog-item
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	margin-bottom: 100px
+	
+    
+.blog-item__photo
+
+.blog-item__header
+	color: #000000
+	font-size: 45px
+	font-style: italic
+	letter-spacing: 0.31px
+	margin: 25px 0 25px 0
+
+
+.blog-item__desc
+	color:#444444
+	font-size: 16px
+	font-weight: 400
+	font-height: 1.9
+	letter-spacing: 0.06px
+	margin-bottom: 50px
+
+
+
+.blog-item__readmore
+	display: inline-block
+	color: #000000
+	height: 52px
+	border: 1px solid #e5e5e5
+	padding: 16px 50px 0
+	font-size: 16px
+	font-weight: 700
+	letter-spacing: 0.6px
+	line-height: 1
+	&:hover
+		background-color: black
+		color: white
+		transition: all 0.2s ease-in
+
+
+
+.blog-item-content
+	padding-left: 20px
+	max-width: 400px
+
+@media only screen and (min-width : 992px)
+	.blog-item
+		flex-direction: row
+		justify-content: space-between
+		&:nth-child(odd)
+			flex-direction: row-reverse
+		margin-bottom: 150px
+	.blog-item__header
+		margin: 0 0 25px 0
+	
+
